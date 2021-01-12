@@ -15,6 +15,11 @@
 		7BABD10425A89D7A0010E0DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BABD10225A89D7A0010E0DA /* LaunchScreen.storyboard */; };
 		7BABD10F25A89D7A0010E0DA /* MiniBakkalAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BABD10E25A89D7A0010E0DA /* MiniBakkalAppTests.swift */; };
 		7BABD11A25A89D7A0010E0DA /* MiniBakkalAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BABD11925A89D7A0010E0DA /* MiniBakkalAppUITests.swift */; };
+		7BABD12B25A8A65A0010E0DA /* ShoppingCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BABD12A25A8A6590010E0DA /* ShoppingCartViewController.swift */; };
+		7BABD18E25AA98190010E0DA /* MiniBakkal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BABD18D25AA98190010E0DA /* MiniBakkal.swift */; };
+		7BABD19725AA99D30010E0DA /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BABD19625AA99D30010E0DA /* Service.swift */; };
+		7BC77F9825AAA02B00FD7C85 /* MyAppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC77F9725AAA02B00FD7C85 /* MyAppViewModel.swift */; };
+		7BC77F9D25ACA7D900FD7C85 /* ItemDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC77F9C25ACA7D900FD7C85 /* ItemDataTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		7BABD11525A89D7A0010E0DA /* MiniBakkalAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniBakkalAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BABD11925A89D7A0010E0DA /* MiniBakkalAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniBakkalAppUITests.swift; sourceTree = "<group>"; };
 		7BABD11B25A89D7A0010E0DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BABD12A25A8A6590010E0DA /* ShoppingCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartViewController.swift; sourceTree = "<group>"; };
+		7BABD18D25AA98190010E0DA /* MiniBakkal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniBakkal.swift; sourceTree = "<group>"; };
+		7BABD19625AA99D30010E0DA /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		7BC77F9725AAA02B00FD7C85 /* MyAppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppViewModel.swift; sourceTree = "<group>"; };
+		7BC77F9C25ACA7D900FD7C85 /* ItemDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDataTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +109,15 @@
 		7BABD0F625A89D770010E0DA /* MiniBakkalApp */ = {
 			isa = PBXGroup;
 			children = (
-				7BABD0F725A89D770010E0DA /* AppDelegate.swift */,
-				7BABD0F925A89D770010E0DA /* SceneDelegate.swift */,
-				7BABD0FB25A89D770010E0DA /* ViewController.swift */,
+				7BABD19525AA999C0010E0DA /* Service */,
+				7BABD18C25AA97890010E0DA /* Model */,
+				7BABD18B25AA977F0010E0DA /* ViewModel */,
+				7BABD18A25AA97770010E0DA /* View */,
 				7BABD0FD25A89D770010E0DA /* Main.storyboard */,
 				7BABD10025A89D7A0010E0DA /* Assets.xcassets */,
 				7BABD10225A89D7A0010E0DA /* LaunchScreen.storyboard */,
 				7BABD10525A89D7A0010E0DA /* Info.plist */,
+				7BC77F9C25ACA7D900FD7C85 /* ItemDataTableViewCell.swift */,
 			);
 			path = MiniBakkalApp;
 			sourceTree = "<group>";
@@ -126,6 +138,41 @@
 				7BABD11B25A89D7A0010E0DA /* Info.plist */,
 			);
 			path = MiniBakkalAppUITests;
+			sourceTree = "<group>";
+		};
+		7BABD18A25AA97770010E0DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7BABD0FB25A89D770010E0DA /* ViewController.swift */,
+				7BABD12A25A8A6590010E0DA /* ShoppingCartViewController.swift */,
+				7BABD0F725A89D770010E0DA /* AppDelegate.swift */,
+				7BABD0F925A89D770010E0DA /* SceneDelegate.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7BABD18B25AA977F0010E0DA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7BC77F9725AAA02B00FD7C85 /* MyAppViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7BABD18C25AA97890010E0DA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7BABD18D25AA98190010E0DA /* MiniBakkal.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7BABD19525AA999C0010E0DA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7BABD19625AA99D30010E0DA /* Service.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +305,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BABD12B25A8A65A0010E0DA /* ShoppingCartViewController.swift in Sources */,
 				7BABD0FC25A89D770010E0DA /* ViewController.swift in Sources */,
+				7BC77F9D25ACA7D900FD7C85 /* ItemDataTableViewCell.swift in Sources */,
+				7BC77F9825AAA02B00FD7C85 /* MyAppViewModel.swift in Sources */,
+				7BABD18E25AA98190010E0DA /* MiniBakkal.swift in Sources */,
 				7BABD0F825A89D770010E0DA /* AppDelegate.swift in Sources */,
 				7BABD0FA25A89D770010E0DA /* SceneDelegate.swift in Sources */,
+				7BABD19725AA99D30010E0DA /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
